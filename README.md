@@ -1,6 +1,8 @@
 # babel-plugin-class-autobind
 
 This plugin will autobind handlers all components listed in directive 'cb-class-autobind'
+
+prefixes = `on, _on, handle, _handle`;
 ## Example
 
 **In**
