@@ -1,6 +1,6 @@
 import without from 'lodash/array/without';
 
-const PREFIX = 'cb-class-autobind ';
+const PREFIX = '@autobind ';
 const BIND_PREFIXES = ['on', 'handle', '_on', '_handle'];
 
 export default function ({ types: t }) {

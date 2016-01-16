@@ -1,6 +1,6 @@
 # babel-plugin-class-autobind
 
-This plugin will autobind handlers all components listed in directive 'cb-class-autobind'
+This plugin will autobind handlers all components listed in directive '@autobind'
 
 prefixes = `on, _on, handle, _handle`;
 ## Example
@@ -8,7 +8,7 @@ prefixes = `on, _on, handle, _handle`;
 **In**
 
 ```js
-'cb-class-autobind Component';
+'@autobind Component';
 
 class Component {
   constructor() {
@@ -40,7 +40,7 @@ $ npm install babel-plugin-class-autobind
 ```
 ## Options
 
-if no components are listed in directive - all handlers in file classes will be bound to class instance. (equal to `cb-class-autobind *`)
+if no components are listed in directive - all handlers in file classes will be bound to class instance. (equal to `@autobind *`)
 
 
 ## Usage

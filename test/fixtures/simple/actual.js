@@ -1,4 +1,4 @@
-'cb-class-autobind Component,Bindable';
+'@autobind Component,Bindable';
 
 class Component {
   constructor() {

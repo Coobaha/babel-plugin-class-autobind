@@ -1,4 +1,4 @@
-'cb-class-autobind Component';
+'@autobind Component';
 
 class Component {
   handleMe(){}
