@@ -16,6 +16,8 @@ class Component {
   handleMe(){}
   onMe(){}
   noBind(){}
+  // @autobind-ignore
+  onIgnored(){}
 }
 ```
 
@@ -30,6 +32,7 @@ class Component {
   handleMe() {}
   onMe() {}
   noBind() {}
+  onIgnored() {}
 }
 ```
 

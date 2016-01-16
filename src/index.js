@@ -1,16 +1,35 @@
 import without from 'lodash/array/without';
 
 const PREFIX = '@autobind ';
+const IGNORE_PREFIX = '@autobind-ignore';
 const BIND_PREFIXES = ['on', 'handle', '_on', '_handle'];
 
 export default function ({ types: t }) {
   const constructorVisitor = {
     ClassMethod(path, state) {
       if (path.node.kind === 'constructor') {
-        path.container.forEach(node => {
+        path.container.forEach((node, idx) => {
           if (t.isClassMethod(node) && node !== path.node) {
             const [keyPrefix] = node.key.name.split(/[A-Z0-9]/);
             if (~BIND_PREFIXES.indexOf(keyPrefix)) {
+              if (node.leadingComments) {
+                let ignored = null;
+                node.leadingComments.some(comment => {
+                  if (~comment.value.indexOf(IGNORE_PREFIX)) {
+                    ignored = comment;
+                    return true;
+                  }
+                  return false;
+                });
+                if (ignored) {
+                  node.leadingComments = without(node.leadingComments, ignored);
+                  node.start = node.start - 1;
+                  if (idx > 0) {
+                    path.container[idx - 1].trailingComments = without(path.container[idx - 1].trailingComments, ignored);
+                  }
+                }
+                return;
+              }
               path.get('body').pushContainer('body', t.expressionStatement(
                 t.assignmentExpression('=',
                   t.memberExpression(t.thisExpression(), t.identifier(node.key.name)),

@@ -17,4 +17,7 @@ class Bindable extends Component {
   }
 
   handleMe() {}
+  onIgnored() {}
+  onIgnoredToo() {}
 }
+

@@ -12,4 +12,8 @@ class Nobind {
 }
 class Bindable extends Component {
   handleMe() {}
+  // @autobind-ignore
+  onIgnored(){}
+  /* @autobind-ignore */
+  onIgnoredToo(){}
 }
