@@ -103,7 +103,7 @@ export default function ({ types: t }) {
             directives = directives.filter(d => d.value.value.startsWith(PREFIX));
             directives.forEach((d) => {
               path.node.directives = without(path.node.directives, d);
-              const [, /* prefix */ components = '*'] = d.value.value.split(' ');
+              const [/* prefix */, components = '*'] = d.value.value.split(' ');
               components.split(',').forEach(c => toBind.add(c));
             });
           }
