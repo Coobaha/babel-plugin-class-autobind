@@ -31,7 +31,8 @@
     "babel-plugin"
   ],
   "dependencies": {
-    "babel-preset-react": "^6.3.13"
+    "babel-preset-react": "^6.3.13",
+    "lodash": "^3.10.1"
   },
   "name": "babel-plugin-class-autobind",
   "directories": {
