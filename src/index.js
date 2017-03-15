@@ -1,4 +1,4 @@
-import without from 'lodash/array/without';
+import without from 'lodash/without';
 
 const PREFIX = '@autobind ';
 const IGNORE_PREFIX = '@autobind-ignore';
