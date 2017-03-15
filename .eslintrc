@@ -1,5 +1,8 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "rules": {
+    "no-param-reassign": 0,
+  }
 }
                      

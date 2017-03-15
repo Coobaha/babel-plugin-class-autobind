@@ -1,7 +1,7 @@
 {
   "description": "binds prefixed class handlers",
   "author": "Alexander @coobaha Ryzhikov",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "main": "lib/index.js",
   "devDependencies": {
     "babel": "^6.3.26",
@@ -14,6 +14,8 @@
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "mocha": "^3.2.0",
     "semantic-release": "^6.3.2"
