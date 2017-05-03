@@ -1,7 +1,8 @@
 # babel-plugin-class-autobind
 
-This plugin will autobind all handlers for components listed in directive '@autobind'
+**Please note that this will add implicit magic to your code**
 
+This plugin will autobind all handlers for components listed in directive '@autobind'
 prefixes = `on, _on, handle, _handle`;
 ## Example
 
