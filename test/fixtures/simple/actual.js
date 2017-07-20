@@ -3,7 +3,9 @@
 class Component {
   constructor() {
   }
+  //comment
   handleMe(){}
+  /*comment*/
   onMe(){}
   noBind(){}
 }

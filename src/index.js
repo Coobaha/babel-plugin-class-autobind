@@ -30,8 +30,8 @@ export default function ({ types: t }) {
                       ignored,
                     );
                   }
+                  return;
                 }
-                return;
               }
               path
                 .get('body')

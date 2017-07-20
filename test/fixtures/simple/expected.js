@@ -3,7 +3,9 @@ class Component {
     this.handleMe = this.handleMe.bind(this);
     this.onMe = this.onMe.bind(this);
   }
+  //comment
   handleMe() {}
+  /*comment*/
   onMe() {}
   noBind() {}
 }
