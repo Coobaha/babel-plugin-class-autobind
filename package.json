@@ -1,7 +1,7 @@
 {
   "description": "binds prefixed class handlers",
   "author": "Alexander @coobaha Ryzhikov",
-  "version": "1.0.0",
+  "version": "2.0.2",
   "main": "lib/index.js",
   "devDependencies": {
     "babel": "^6.3.26",
